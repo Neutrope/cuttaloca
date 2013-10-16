@@ -145,6 +145,15 @@
 <!-- right menu -->
 <div id="rightMenu">
 
+{% if logindata.User.gender == 1 %}
+<aside class="portfolio mt1">
+	<h1>PR</h1>
+	<p class="pr">
+	<a href="http://smartauction.jp?mid=cut" target="_blank"><img src="/img/pr/smaoku_cuttaloca_220_220.png" alt="TAG index" border="0"></a>
+	</p>
+</aside>
+{% endif %}
+
 <aside class="portfolio mt0">
 	<h1>写真</h1>
 	<p class="more"><a href="" class="fadeBtn">もっとみる</a></p>
