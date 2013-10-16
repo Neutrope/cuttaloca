@@ -1,0 +1,9 @@
+*.log
+/.settings/
+*.buildpath
+*.project
+*.DS_Store
+*.Thumbs.db
+cuttaloca_*
+/app/Plugin/TwigView/tmp/
+/lib/Cake/Console/Templates/skel/tmp/
