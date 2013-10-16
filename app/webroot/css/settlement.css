@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/*19*/
+#header h2 {
+    float: left;
+    font-size: 13px;
+    padding: 43px 0 0 32px;
+}
+
+#contents {
+	padding-top: 100px!important;
+	clear: both;
+}
+
+#contents p {
+	font-size: 11px;
+}
+
+#contents .comfirmWrapper {
+	padding: 40px 0 40px;
+    border-top: 2px solid #E1E1E1;
+    border-bottom: 2px solid #E1E1E1;
+	text-align: left;
+	overflow: hidden;
+}
+
+#mainContents .comfirmLeft {
+	width: 440px;
+	float: left;
+}
+
+#mainContents .comfirmRight {
+	width: 462px;
+	float: right;
+}
+
+#mainContents .comfirmRight .comfirmBox02 {
+	margin: 0 0 40px;
+	padding: 40px 20px;
+	background-color: #EAEAEA;
+}
+
+#mainContents .comfirmRight .comfirmBox02 p {
+	margin: 0 0 20px;
+	line-height: 150%;
+	font-size: 12px;
+}
+
+#mainContents .comfirmLeft .face {
+	float: left;
+}
+
+#mainContents .name {
+	float: right;
+    width: 320px;
+	text-align: left;
+}
+
+#mainContents .name h1 {
+	font-size: 22px;
+}
+
+#mainContents .name .shop {
+    margin: 18px 0 15px;
+    background: url(../img/stylist/list_icon02.png) no-repeat scroll left center transparent;
+	zoom: 1;
+}
+
+#mainContents .name .shop h2{
+	padding: 0 0 4px 20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#mainContents .name .shop h2 a {
+	color: #00873b;
+}
+
+#mainContents .name .shop h2 a:hover{
+	color: #b8d4c1;
+}
+
+#mainContents .name .shop p {
+	padding: 0 0 0 20px;
+}
+
+#mainContents .name .shop p.noShop {
+	padding: 5px 0 0 20px;
+}
+
+#mainContents .name .prof {
+	margin: 25px 0 0;
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+	width: 130px;
+}
+
+#mainContents .name .weekUl {
+	margin-right: 0;
+	width: 73px;
+	float: left;
+}
+
+#mainContents .comfirmBox01 {
+	margin: 0 0 20px;
+	overflow: hidden;
+}
+
+#mainContents .formBox {
+	clear: both;
+}
+
+#mainContents .formBox h2 {
+	margin: 0 0 20px;
+	padding: 7px 10px 6px;
+	background: #151713;
+	line-height: 110%;
+	font-size: 12px;
+	color: #FFF;
+	font-weight: bold;
+	clear: both;
+}
+
+#mainContents .formBox input {
+	vertical-align: middle;
+}
+
+#mainContents .formBox dl{
+	width: 440px;
+	overflow: hidden;
+	font-size: 11px;
+	margin: 0 0 30px;
+}
+
+#mainContents .formBox dl dt{
+	width: 94px;
+	float: left;
+	clear: both;
+	line-height: 140%;
+	padding: 0 0 5px 0;
+}
+
+#mainContents .formBox dl dd{
+	width: 337px;
+	float: right;
+	padding: 0 0 5px 0;
+	line-height: 140%;
+}
+
+#mainContents .formBox dl dd span {
+	width: 10px;
+	display: inline-block;
+}
+
+#mainContents .formBox .formDl {
+	margin-bottom: 0;
+}
+
+#mainContents .formBox .formDl dd {
+	padding-bottom: 15px;
+}
+
+#mainContents .formBox dl dd .ico {
+	width: 30px;
+	text-align: center;
+}
+
+#mainContents .formBox .sel01 {
+	width: 130px;
+}
+
+#mainContents .table01 {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#mainContents .table01 th,
+#mainContents .table01 td {
+	padding: 12px 10px;
+	font-weight: normal;
+	font-size: 11px;
+	border: 1px solid #E1E1E1;
+	vertical-align: middle;
+}
+
+#mainContents .table01 th {
+	text-align: left;
+	background-color: #EDEDED;
+}
+
+#mainContents .table01 td {
+	text-align: right;
+}
+
+#mainContents .tableBox {
+	border: 1px solid #E1E1E1;
+}
+
+#mainContents .tableBox table th {
+	border-right: 2px solid #E1E1E1;
+}
+
+#mainContents .table01 .special01 th,
+#mainContents .table01 .special01 td {
+	border-top: 2px solid #E1E1E1;
+	border-bottom: none;
+}
+
+#mainContents .tableBox01 {
+	border: 1px solid #151713;
+}
+
+#mainContents .tableBox01 .table01 th,
+#mainContents .tableBox01 .table01 td {
+	border: 1px solid #151713;
+}
+
+#mainContents .tableBox01 .table01 th {
+	border-right: 2px solid #151713;
+	color: #fff;
+	background-color: #151713;
+}
+
+#mainContents .notice {
+	padding: 5px 0 30px;
+	color: #FF332D;
+	text-align: right;
+}
+
+#mainContents .comfirmBtn {
+	padding: 40px 0 0;
+	float: right;
+}
+
+#mainContents .comfirmBtn li {
+	padding-left: 10px;
+	float: left;
+}
+
+#mainContents .comfirmBtn li a {
+	display: block;
+	width: 150px;
+	height: 42px;
+	overflow: hidden;
+}
+
+#mainContents .comfirmBtn li a span{
+	display: block;
+	width: 143px;
+	height: 35px;
+	border: #2f2f2f 2px solid;
+	background: #FFF url(../img/19/f_btn01_off.gif) center center no-repeat;
+	text-indent: -3333px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	/*shadow #2f2f2f*/
+	-moz-box-shadow: 3px 3px 0 #2f2f2f;
+	-webkit-box-shadow: 3px 3px 0 #2f2f2f;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#2f2f2f,Positive=1,OffX=3,OffY=3);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#2f2f2f,Positive=1,OffX=3,OffY=3);
+	box-shadow: 3px 3px 0 #2f2f2f;
+}
+
+#mainContents .comfirmBtn li a span:hover{
+	background: #2f2f2f url(../img/19/f_btn01_on.gif) center center no-repeat;
+	color: #2f2f2f;
+	margin: 3px 0 0 3px;
+	/*shadow*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#aeb9d4,Positive=0,OffX=0,OffY=0);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#aeb9d4,Positive=0,OffX=0,OffY=0);
+
+	box-shadow: none;
+}
+
+#mainContents .comfirmBtn li a span:active{
+	border-top: #000 3px solid;
+	border-left: #000 3px solid;
+}
+
+#mainContents .comfirmBtn .lastBtn a span{
+	background: #FFF url(../img/19/f_btn02_off.gif) center center no-repeat;
+}
+
+#mainContents .comfirmBtn .lastBtn a span:hover{
+	background: #2f2f2f url(../img/19/f_btn02_on.gif) center center no-repeat;
+}

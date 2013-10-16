@@ -1,0 +1,184 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-08-09 16:59+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Console\myapp\View\Layouts\default.ctp:24
+#: Console\myapp\View\Layouts\error.ctp:24
+msgid "CakePHP: the rapid development php framework:"
+msgstr ""
+
+#: Console\myapp\View\Layouts\default.ctp:40;50
+#: Console\myapp\View\Layouts\error.ctp:40;50
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: Controller\AccountsController.php:30;62;90
+#: Controller\Admin\AdminAccountController.php:32;64;92;122;154;182
+msgid "Invalid account"
+msgstr ""
+
+#: Controller\AccountsController.php:44;66
+#: Controller\Admin\AdminAccountController.php:46;68;136;158
+msgid "The account has been saved"
+msgstr ""
+
+#: Controller\AccountsController.php:47;69
+#: Controller\Admin\AdminAccountController.php:49;71;139;161
+msgid "The account could not be saved. Please, try again."
+msgstr ""
+
+#: Controller\AccountsController.php:93
+#: Controller\Admin\AdminAccountController.php:95;185
+msgid "Account deleted"
+msgstr ""
+
+#: Controller\AccountsController.php:96
+#: Controller\Admin\AdminAccountController.php:98;188
+msgid "Account was not deleted"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:4
+msgid "Add Account"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:10
+#: View\Admin\Accounts\edit.ctp:11
+msgid "Submit"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:13
+#: View\Admin\Accounts\edit.ctp:14
+#: View\Admin\Accounts\index.ctp:8;40
+#: View\Admin\Accounts\view.ctp:32
+msgid "Actions"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:16
+#: View\Admin\Accounts\edit.ctp:18
+#: View\Admin\Accounts\view.ctp:36
+msgid "List Accounts"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:17
+#: View\Admin\Accounts\edit.ctp:19
+#: View\Admin\Accounts\view.ctp:38
+msgid "List Passwords"
+msgstr ""
+
+#: View\Admin\Accounts\add.ctp:18
+#: View\Admin\Accounts\edit.ctp:20
+#: View\Admin\Accounts\view.ctp:39
+msgid "New Password"
+msgstr ""
+
+#: View\Admin\Accounts\edit.ctp:4
+#: View\Admin\Accounts\view.ctp:34
+msgid "Edit Account"
+msgstr ""
+
+#: View\Admin\Accounts\edit.ctp:17
+#: View\Admin\Accounts\index.ctp:19
+msgid "Delete"
+msgstr ""
+
+#: View\Admin\Accounts\edit.ctp:17
+#: View\Admin\Accounts\index.ctp:19
+#: View\Admin\Accounts\view.ctp:35
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:2
+msgid "Accounts"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:17
+msgid "View"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:18
+msgid "Edit"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:27
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:33
+msgid "previous"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:35
+msgid "next"
+msgstr ""
+
+#: View\Admin\Accounts\index.ctp:42
+#: View\Admin\Accounts\view.ctp:37
+msgid "New Account"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:2
+msgid "Account"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:4;46
+msgid "Id"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:9
+msgid "Account Type"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:14
+msgid "Last Login"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:19;58
+msgid "Created"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:24;62
+msgid "Modified"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:35
+msgid "Delete Account"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:43
+msgid "Related Passwords"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:50
+msgid "Account Id"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:54
+msgid "Password"
+msgstr ""
+
+#: View\Admin\Accounts\view.ctp:70
+msgid "Edit Password"
+msgstr ""
+
+#: Model\Account.php:validation for field name;validation for field mailaddress;validation for field client_id;validation for field client_secret
+#: Model\Password.php:validation for field password
+msgid "notempty"
+msgstr ""
+
+#: Model\Account.php:validation for field del_flag
+#: Model\Password.php:validation for field account_id
+msgid "numeric"
+msgstr ""
+

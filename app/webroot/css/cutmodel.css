@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.stylistData {
+	margin-bottom: 0;
+}
+
+.stylistData .wrapper .left .cutUl li {
+	padding: 8px 9px 9px;
+	width: 202px;
+	float: left;
+	font-size: 11px;
+	color: #008837;
+	background-color: #E5F3EB;
+}
+
+.stylistData .wrapper .left .cutUl li img {
+	margin-right: 9px;
+	vertical-align: middle;
+}
+
+.stylistData .wrapper .left .cutUl li a {
+	color: #008837;
+}
+
+.stylistData .wrapper .left .cutUl .special {
+	border-top: 1px solid #6FBE92;
+	border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+}
+
+.stylistData .wrapper .right dl dt {
+	width: 130px;
+	background: url(../img/stylist/colon.png) 123px 0.3em no-repeat;
+}
+
+.stylistData .wrapper .right dl .shape {
+	margin-top: 5px;
+}
+
+.stylistData .wrapper .right dl dd {
+	width: 190px;
+}
+
+.stylistData .wrapper .right dl dd img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.stylistData .wrapper .right .pc {
+	margin: 5px 20px 20px 0;
+	font-size: 11px;
+	line-height: 180%;
+}
+
+.checkIcon {
+	margin-left: 10px;
+}
+

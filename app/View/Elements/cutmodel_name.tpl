@@ -1,0 +1,2 @@
+<h1><a href="/stylist/user/{{ stylist.CutModel.id }}">{{ stylist.User.last_name }}&nbsp;{{ stylist.User.first_name }}</a></h1>
+<p>{{ gender[stylist.User.gender] }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ prefecture[stylist.CutModel.prefecture01] }}</p>

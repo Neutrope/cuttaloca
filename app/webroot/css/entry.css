@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+#subHeader .wrapper .who a {
+	color: #008837;
+}
+
+#subHeader .wrapper .nav ul {
+	overflow: inherit;
+}
+
+#subHeader .wrapper .gNavi ul .current a span {
+	padding-left: 25px;
+	background: url(../img/common/icon03.png) no-repeat left center;
+}
+
+.registerMain {
+	margin: 0 40px 0 0;
+	width: 320px;
+	float: left;
+	text-align: left;
+}
+
+.registerMain01 {
+	margin-right: 29px;
+}
+
+.registerMain h2 {
+	margin: 0 0 7px;
+	padding: 0 0 0 10px;
+	color: #FFF;
+	height: 27px;
+	font-size: 11px;
+	line-height: 27px;
+	text-align: left;
+	background-color: #060001;
+}
+
+.registerMain dl {
+	width: 320px;
+	overflow: hidden;
+	font-size: 11px;
+	margin: 0 0 12px 0;
+	color: #151713;
+}
+
+.registerMain dt {
+	width: 135px;
+	float: left;
+	clear: both;
+	line-height: 140%;
+	background: url(../img/stylist/colon.png) right 0.3em no-repeat;
+	padding: 0 0 5px 0;
+}
+
+.registerMain dl .shape {
+	margin-top: 5px;
+}
+
+.registerMain dd img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.registerMain dd {
+	width: 175px;
+	float: right;
+	padding: 0 0 5px 0;
+	line-height: 140%;
+}
+
+.registerMain .pc {
+	margin: 5px 0 20px;
+	font-size: 11px;
+	line-height: 180%;
+}
+
+.postBtn {
+	padding: 63px 0 0 29px;
+	width: 200px;
+	min-height: 110px;
+	float: right;
+	text-align: left;
+	border-left: 2px solid #e1e1e1;
+}
+
+.postBtn .confirm {
+	padding-bottom: 35px;
+	font-size: 12px;
+	color: #00873b;
+	font-weight: bold;
+}
+
+.schedule a {
+	width: 200px;
+	height: 41px;
+}
+
+.schedule a span {
+	width: 178px;
+	height: 30px;
+	padding: 16px 0 0 15px;
+}
+
+.schedule01 a span {
+	background: #FFF url(../img/16/img_link.gif) 10px center no-repeat;
+}
+
+.schedule01 a span:hover {
+	background: #2f2f2f url(../img/16/img_link_on.gif) 10px center no-repeat;
+}
+
+.display {
+	font-size: 11px;
+}
+
+.editable .label {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 135px;
+	line-height: 140%;
+	background: url(../img/stylist/colon.png) right 0.3em no-repeat;
+	margin-right: 10px;
+}
+
+.editable .display {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.editable .form {
+	display: none;
+}
+
+.editable.current .display {
+	display: none;
+}
+
+.editable.current .form {
+	display: block;
+}
+
+.form {
+	margin-bottom: 5px;
+}
+
+.form textarea {
+	width: 277px;
+}
+
+.form .label {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.form select {
+	width: 120px;
+	margin: 0 10px;
+}
+
+.btn-entry {
+	margin: 10px 0 0 0;
+}
+
+.btn-submit span {
+	color: #00873B;
+	border: 2px solid #00873B;
+	/*shadow #2f2f2f*/
+	-moz-box-shadow: 3px 3px 0 #00873B;
+	-webkit-box-shadow: 3px 3px 0 #00873B;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#00873B,Positive=1,OffX=3,OffY=3);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#00873B,Positive=1,OffX=3,OffY=3);
+	box-shadow: 3px 3px 0 #00873B;
+}
+
+.btn-submit span:hover {
+	background-color: #00873B;
+}
+
+.btn-cancel span {
+	color: #707070;
+	border: 2px solid #707070;
+	/*shadow #707070*/
+	-moz-box-shadow: 3px 3px 0 #707070;
+	-webkit-box-shadow: 3px 3px 0 #707070;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=1,OffX=3,OffY=3);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=1,OffX=3,OffY=3);
+	box-shadow: 3px 3px 0 #707070;
+}
+
+.btn-cancel span:hover {
+	background-color: #707070;
+}

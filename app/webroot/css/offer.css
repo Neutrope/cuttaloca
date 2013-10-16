@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+#subHeader .wrapper .who a {
+	color: #008837;
+}
+
+#subHeader .wrapper .nav ul {
+	overflow: inherit;
+}
+
+#fancybox-content .stylistData {
+	margin-top: 0;
+}
+
+.stylistData {
+	margin-top: -30px;
+	background: none;
+}
+
+.stylistData .stylistDataIn {
+	margin-top: 30px;
+	width: 940px;
+	border: none;
+}
+
+.heightLine-01 .profile {
+	height: 273px;
+}
+
+.heightLine-02 .profile {
+	height: 379px;
+}
+
+.heightLine-03 .profile {
+	height: 260px;
+}
+
+.heightLine-11 .profile {
+	height: 273px;
+}
+
+.heightLine-12 .profile {
+	height: 273px;
+}
+
+.heightLine-13 .profile {
+	height: 262px;
+}
+
+.stylistDataIn .wrapper, {
+	height: 100%;
+}
+
+.stylistDataIn .profile {
+	width: 696px;
+	margin: 0;
+	border: 2px solid #E1E1E1;
+	float: left;
+}
+
+.stylistDataIn .message {
+	width: 220px;
+	float: right;
+}
+
+.offer-message {
+	width: 220px;
+}
+
+.heightLine-01 .offer-message {
+	height: 274px;
+	color: #0D944C;
+	background-color: #dae8e0;
+}
+
+.heightLine-02 .offer-message {
+	height: 90px;
+	color: #EE1A9A;
+	background-color: #FDE9F5;
+}
+
+.heightLine-03 .offer-message {
+	height: 195px;
+	background-color: #F3F3F3;
+}
+
+.heightLine-11 .offer-message {
+	height: 209px;
+	color: #EE1A9A;
+	background-color: #FDE9F5;
+}
+
+.heightLine-12 .offer-message {
+	height: 209px;
+	color: #0D944C;
+	background-color: #dae8e0;
+}
+
+.heightLine-13 .offer-message {
+	height: 197px;
+	color: #EE1A9A;
+	background-color: #FDE9F5;
+}
+
+.offer-message td {
+	padding: 18px 10px 18px 15px;
+	text-decoration: underline;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 170%;
+	vertical-align: middle;
+}
+
+
+.offerfolio .schedule01 {
+	padding-top: 20px;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* IE fixed - without IE10
+ ============================================================ */
+
+/*list left menu*/
+body.stylistList #leftMenu .place select{
+	display: block;
+}
+
+body.stylistList #leftMenu .place select optgroup,
+body.stylistList #leftMenu .place select option{
+	color: #202020;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body.stylistList #leftMenu .place select option.hit{
+	color: #FFF;
+	display: block;
+	background-color: transparent;
+}
+
+/*IE7*/
+*+html body.stylistList #leftMenu .place select option.hit{
+	background-color: #5d5d5d;
+}
+*+html body.stylistList #leftMenu .place li:hover select option.hit{background-color: #404040;}
+
+
+
