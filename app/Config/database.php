@@ -69,6 +69,19 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
+	
+	/*
+	public $default = array(
+			'datasource' => 'Database/Mysql',
+			'persistent' => false,
+			'host' => 'mysql478.db.sakura.ne.jp',
+			'login' => 'side-tail',
+			'password' => 'sidetail1008ntrp',
+			'database' => 'side-tail_ntrp',
+			'prefix' => '',
+			'encoding' => 'utf8',
+	);*/
+	
 
 	public $test = array(
 		'datasource' => 'Database/Mysql',
