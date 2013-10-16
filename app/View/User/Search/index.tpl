@@ -29,11 +29,9 @@
 <li>
 	{{ form.select('prefecture', search_prefecture, {'empty':'都道府県'}) }}
 </li>
-{% if 1 == 0 %}
 <li>
 	{{ form.select('area', {}, {'empty':'エリア'}) }}
 </li>
-{% endif %}
 </ul>
 </div>
 </div>
