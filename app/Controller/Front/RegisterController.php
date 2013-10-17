@@ -132,6 +132,15 @@ class RegisterController extends FrontBaseController {
 		$this->set('perm_before', Configure::read('PermBefore'));
 		$this->set('perm_after', Configure::read('PermAfter'));
 		$this->set('prefecture', $this->Prefecture->getList());
+		
+		// モバイル判定（iPad除く）
+		if( $this->request->is('mobile') && !preg_match('/iPad/i', $_SERVER['HTTP_USER_AGENT']) ){
+			// モバイルテーマ /View/Front/Themed/Mobile/ 以下を参照させる
+			$this->theme = 'Mobile';
+		
+			// レイアウトもスマホ用
+			$this->layout = 'front_sp';
+		}
 	}
 
 	public function stylist() {
