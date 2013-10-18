@@ -2,7 +2,7 @@
 define('CONFIG', APP . DS . 'Config');
 
 define('DOMAIN', 'http://www.cuttaloca.com');
-define('FILE_VERSION', 20130918);
+define('FILE_VERSION', 20131018);
 
 $dir = explode('/', $_SERVER['REQUEST_URI'])[1];
 if (in_array($dir, ['admin', 'stylist', 'user', 'json'])) {
