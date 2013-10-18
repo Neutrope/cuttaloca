@@ -170,7 +170,7 @@ class OfferController extends StylistBaseController {
 
 	public function entry() {
 		$this->load_models(['Calendar', 'Schedule']);
-		$this->header['title'] = '掲載登録';
+		$this->header['title'] = '掲載内容 確認＆更新';
 		$this->header['css'][] = 'register';
 		$this->header['js'] = ['stylist', 'register'];
 

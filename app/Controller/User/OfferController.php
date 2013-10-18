@@ -438,6 +438,7 @@ class OfferController extends UserBaseController {
 	}
 
 	public function entry() {
+		$this->header['title'] = '掲載内容 確認＆更新';
 		$this->header['css'] = ['stylist', 'register'];
 		$this->header['js'] = 'register';
 

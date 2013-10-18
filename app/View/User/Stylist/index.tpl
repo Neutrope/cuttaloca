@@ -6,7 +6,7 @@
 <nav class="nav gNavi"><ul>
 <li class="m1"><span class="number{% if count_success == 0 %} number01{% endif %}">{{ count_success }}</span><a href="/user/offer/approve/" title="成立" class="fadeBtn">成立</a></li>
 <li class="m2"><span class="number{% if count_offers == 0 %} number01{% endif %}">{{ count_offers }}</span><a href="/user/offer/" title="オファー" class="fadeBtn">オファー</a></li>
-<li class="m3"><a href="/user/offer/entry/" title="掲載登録" class="fadeBtn">掲載登録</a></li>
+<li class="m3"><a href="/user/offer/entry/" title="掲載内容 確認＆更新" class="fadeBtn">掲載内容 確認＆更新</a></li>
 </ul></nav>
 <p class="who"><a href="/user/mypage/" class="fadeBtn">{{ logindata.User.last_name }}&nbsp;{{ logindata.User.first_name }}</a></p>
 </div></header>
