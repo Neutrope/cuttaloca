@@ -116,7 +116,7 @@ ga('send', 'pageview');
 	<li class="m3"><a href="/terms/company" class="fadeBtn">会社概要</a></li>
 	<li class="m2"><a href="/terms/use" class="fadeBtn">利用規約</a></li>
 	<li class="m7"></li>
-	<li class="m9"><a href="/terms/media" class="fadeBtn">メディア掲載情報</a></li>
+	<li class="m9"><a href="http://www.side-tail.com/#press" target="_blank" class="fadeBtn">メディア掲載情報</a></li>
 	<li class="m8"><a href="/terms/tokusho" class="fadeBtn">特定商取引に関する表記</a></li>
 	<li class="m7"></li>
 	<li class="m7"><a href="/terms/recruit" class="fadeBtn">採用情報</a></li>
