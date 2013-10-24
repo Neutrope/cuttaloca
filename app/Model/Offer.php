@@ -89,7 +89,7 @@ class Offer extends AppModel {
 			]
 		]);
 
-		$conditions = ['Offer.cut_model_id' => $id, 'Offer.paid' => 1];
+		$conditions = ['Offer.cut_model_id' => $id, 'Offer.paid' => 1, 'Offer.status' => STATUS_SUCCESS];
 		$order = ['Offer.modified' => 'DESC'];
 		return $this->find('all', compact('conditions', 'order'));
 	}

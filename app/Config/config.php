@@ -2,7 +2,7 @@
 define('CONFIG', APP . DS . 'Config');
 
 define('DOMAIN', 'http://www.cuttaloca.com');
-define('FILE_VERSION', 20131018);
+define('FILE_VERSION', 20131022);
 
 $dir = explode('/', $_SERVER['REQUEST_URI'])[1];
 if (in_array($dir, ['admin', 'stylist', 'user', 'json'])) {
@@ -69,6 +69,7 @@ define('ROLE_CUTMODEL', 3);
 define('STATUS_OFFER', 1);
 define('STATUS_ADJUST', 2);
 define('STATUS_SUCCESS', 5);
+define('STATUS_END', 6);
 define('STATUS_CANCEL', 9);
 
 define('DIRECTION_TO_STYLIST', 1);
@@ -79,6 +80,9 @@ define('SEARCH_DISP_NUM', 30);
 define('USER_STATUS_ACCEPT', 1);
 define('USER_STATUS_PENDING', 2);
 define('USER_STATUS_DELETE', 9);
+
+define('LIMIT_REVIEW', 2);
+define('LIMIT_PORTFOLIO', 5);
 
 //define('AUTHORITY_NORMAL', 1);
 //define('AUTHORITY_BRANCH', 2);

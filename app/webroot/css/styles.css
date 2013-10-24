@@ -360,16 +360,13 @@ body{text-align: center; padding: 6px; min-width: 960px;}
 #footer .right .footerNavi .pagetop{
 	float: right;
 	width: 59px;
-	/*border-top: #2f2f2f 2px solid;*/
 	padding: 51px 0 0 0;
 }
 #footer .right .footerNavi .pagetop a{
 	display: block;
-	text-indent: -3333px;
 	overflow: hidden;
 	width: 59px;
 	height: 38px;
-	background: url(../img/common/f_pagetop.png) 0 0 no-repeat;
 }
 
 

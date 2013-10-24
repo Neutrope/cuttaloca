@@ -9,18 +9,18 @@ $(function(){
 		// left menu
 		var $placeDiv = $leftMenu.find('.place');
 		var $placeH1 = $placeDiv.find('h1');
-		var $placeHideDiv = $placeDiv.find('div.hideDiv');
-		var $placeHideUl = $placeDiv.find('ul.hideUl');
+		var $placeHideDiv = $placeDiv.find('.hideDiv');
+		var $placeHideUl = $placeDiv.find('.hideUl');
 
 		var $sexDiv = $leftMenu.find('.sex');
 		var $sexH1 = $sexDiv.find('h1');
-		var $sexHideDiv = $sexDiv.find('div.hideDiv');
-		var $sexHideUl = $sexDiv.find('ul.hideUl');
+		var $sexHideDiv = $sexDiv.find('.hideDiv');
+		var $sexHideUl = $sexDiv.find('.hideUl');
 
 		var $termsDiv = $leftMenu.find('.terms');
 		var $termsH1 = $termsDiv.find('h1');
-		var $termsHideDiv = $termsDiv.find('div.hideDiv');
-		var $termsHideUl = $termsDiv.find('ul.hideUl');
+		var $termsHideDiv = $termsDiv.find('.hideDiv');
+		var $termsHideUl = $termsDiv.find('.hideUl');
 
 		$placeHideDiv.hide(0);
 		$sexHideDiv.hide(0);
@@ -68,7 +68,7 @@ $(function(){
 		});
 
 		// place selected
-		$leftMenu.find('.place ul.hideUl li select').change(function(){
+		$leftMenu.find('.place').find('.hideUl').find('li').find('select').change(function(){
 			 $(this).find('option.hit').removeClass('hit');
 			 $(this).find('option:selected').addClass('hit');
 			 
@@ -77,7 +77,7 @@ $(function(){
 		});
 
 		// click place Li
-		$leftMenu.find('.place ul.hideUl li').click(function(){
+		$leftMenu.find('.place').find('.hideUl').find('li').click(function(){
 			var thisSelect = $(this).children();
 
 			return false;
@@ -101,11 +101,11 @@ $(function(){
 		// click show schedule
 		$('.stylistData').each(function(){
 			
-			var $hidedSchedule=$(this).find('.hideScedule');
-			var $hidedScheduleWeeks=$hidedSchedule.find('.weeks');
-			var showedFlg=false;
+			var $hidedSchedule = $(this).find('.hideScedule');
+			var $hidedScheduleWeeks = $hidedSchedule.find('.weeks');
+			var showedFlg = false;
 
-			$(this).find('.link .m2 a').click(function(){
+			$(this).find('.link').find('.m2').find('a').click(function(){
 				if(!showedFlg){
 					$(this).parent().addClass('m2Hit');
 					
@@ -115,11 +115,10 @@ $(function(){
 						top: 0
 					}, 300, 'easeOutExpo');
 					
-					showedFlg=true;
+					showedFlg = true;
 				}
 				return false;
 			});
-			
 		});
 
 		$('#CutModelPrefecture, #StylistPrefecture').change(function() {
@@ -150,6 +149,14 @@ $(function(){
 		});
 	}
 
+	// review
+	$reviewDiv = $('.comment').find('div').each(function() {
+		if ($(this).height() + 1 < $(this).find('p').height()) {
+			//$(this).append('<a href="#" class="review-expansion">もっと見る</a>');
+		}
+	});
+	
+
 	// COMMON - Schedule Slide
 	$('.hideScedule').each(function(){
 
@@ -167,7 +174,6 @@ $(function(){
 			if($thisWeek.height() > thisSceduleHeight){
 				thisSceduleHeight = $thisWeek.height();
 			}
-			
 		});
 
 		// set
@@ -178,8 +184,9 @@ $(function(){
 		$thisScedule.css({height:thisSceduleHeight});
 
 		// add event - navi
-		var $prev = $thisScedule.find('.navi .prev');
-		var $next = $thisScedule.find('.navi .next');
+		var $navi = $thisScedule.find('.navi');
+		var $prev = $navi.find('.prev');
+		var $next = $navi.find('.next');
 		$prev.hide(0);
 
 		// slide function
@@ -222,5 +229,14 @@ $(function(){
 		}
 
 		$('.dateList').hide(0);
+	});
+
+	$(document).on('click', '.review-expansion', function() {
+		var $div = $(this).closest('div');
+		var height = $(this).prev().height();
+		var now = $div.height();
+		$div.css({'max-height':'none', 'height': now}).animate({'height':height}, 300);
+		$(this).remove();
+		return false;
 	});
 });

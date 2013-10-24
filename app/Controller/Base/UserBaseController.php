@@ -57,7 +57,7 @@ abstract class UserBaseController extends LoginBaseController {
 
 	public function beforeRender() {
 		parent::beforeRender();
-		$this->set('count_success', $this->Offer->find('count', ['conditions' => ['Offer.paid' => 1, 'Offer.cut_model_id' => $this->logindata['CutModel']['id']]]));
+		$this->set('count_success', $this->Offer->find('count', ['conditions' => ['Offer.paid' => 1, 'Offer.status' => STATUS_SUCCESS, 'Offer.cut_model_id' => $this->logindata['CutModel']['id']]]));
 		$this->set('count_offers', $this->Offer->find('count', ['conditions' => ['NOT' => ['Offer.paid' => 1, 'Offer.status' => STATUS_CANCEL], 'Offer.cut_model_id' => $this->logindata['CutModel']['id']]]));
 		$this->set('prefecture', $this->Prefecture->getProfList());
 		$this->set('gender', [1 => '女性', 2 => '男性', 9 => '男女']);

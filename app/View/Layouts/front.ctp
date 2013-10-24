@@ -49,7 +49,6 @@
 <?php } else if ($header['js']) { ?>
 	<script src="/js/<?php echo $header['js']; ?>.js?v=<?= FILE_VERSION ?>"></script>
 <?php } ?>
-<script src="/js/heightLine.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -144,7 +143,7 @@ ga('send', 'pageview');
 	<li class="m5"><a href="/terms/privacy" class="fadeBtn">プライバシーポリシー</a></li>
 	</ul>
 
-<p class="pagetop"><a href="javascript:void(0);">PAGE TOP</a></p>
+<p class="pagetop"><a href="javascript:void(0);"><img src="/img/common/f_pagetop.png" width="59" height="88" alt="PAGE TOP" /></a></p>
 
 </nav>
 

@@ -73,6 +73,7 @@
 <!-- right menu -->
 <div id="rightMenu">
 
+{% if 1 == 0 %}
 <aside class="reviews">
 	<h1>レビュー（{{ reviews|length }}件）</h1>
 {% for review in reviews %}
@@ -91,7 +92,7 @@
 {% endfor %}
 	<p class="more"><a href="" class="fadeBtn">もっとみる</a></p>
 </aside>
-
+{% endif %}
 
 <aside class="portfolio">
 	<h1>ポートフォリオ（{{ portfolios|length }}件）</h1>

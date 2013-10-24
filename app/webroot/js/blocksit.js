@@ -180,3 +180,12 @@
 	}
 
 })(jQuery);
+
+$(function() {
+	$('#photoList').BlocksIt({
+		numOfCol: 4,
+		offsetX: 8,
+		offsetY: 0,
+		blockElement: 'li'
+	});
+});

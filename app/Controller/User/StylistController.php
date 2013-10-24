@@ -61,9 +61,11 @@ class StylistController extends UserBaseController {
 		$this->set('perm_after', Configure::read('PermAfter'));
 
 		$this->set('stylist', $stylist);
-		$this->set('reviews', $this->Review->findAllByStylistUserId($stylist['User']['id']));
+		$this->set('reviews', $this->Review->findAllByStylistUserId($stylist['User']['id'], null, 'rand()', LIMIT_REVIEW));
+		$this->set('review_count', $this->Review->find('count', ['conditions' => ['Review.stylist_user_id' => $stylist['User']['id']]]));
 		$this->set('stylists', $this->Stylist->getlist());
 		$this->set('apply_time', Configure::read('ApplyCutModel'));
-		$this->set('portfolios', $this->Portfolio->findAllByStylistId($id));
+		$this->set('portfolios', $this->Portfolio->findAllByStylistId($id, null, null, LIMIT_PORTFOLIO));
+		$this->set('portfolio_count', $this->Portfolio->find('count', ['conditions' => ['Portfolio.stylist_id' => $id]]));
 	}
 }

@@ -43,10 +43,10 @@ class OfferController extends UserBaseController {
 
 	public function approve() {
 		$this->header['css'][] = 'accept_offer';
-		
-		// 現在から2週間前の日付（カット予定日を過ぎても、14日間は相手への連絡を可能にするための日付の比較対象）
-		$this->set('two_weeks_before', date("Y-m-d",strtotime("-2 week")));
-		
+
+		// カット日から1日過ぎたらレビューページ
+		$this->set('review_date', date("Y-m-d", strtotime("-1 days")));
+
 		$this->set('offers', $this->Offer->offerApproveForCutModel($this->logindata['CutModel']['id']));
 	}
 

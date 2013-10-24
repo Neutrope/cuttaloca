@@ -64,15 +64,6 @@ class IndexController extends FrontBaseController {
 		}
 		$this->set('top', true);
 		$this->header['js'] = 'index';
-		
-		// モバイル判定（iPad除く）
-		if( $this->request->is('mobile') && !preg_match('/iPad/i', $_SERVER['HTTP_USER_AGENT']) ){
-			// モバイルテーマ /View/Front/Themed/Mobile/ 以下を参照させる
-			$this->theme = 'Mobile';
-		
-			// レイアウトもスマホ用
-			$this->layout = 'front_sp';
-		}
 	}
 
 	public function login() {

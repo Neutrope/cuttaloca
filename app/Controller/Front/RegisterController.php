@@ -63,12 +63,10 @@ class RegisterController extends FrontBaseController {
 		$user = $this->User->findByFacebookId($fb);
 		if (!empty($user) && !TEST_MODE) {
 			if ($user['User']['role_id'] == ROLE_CUTMODEL) {
-				//$this->redirect('/thanks_for_user.html');
 				$this->Auth->login($this->User->getLoginData($fb));
 				$this->redirect('/user/search/');
 			} else {
 				//$this->redirect('/thanks_for_stylist.html');
-				$this->Auth->login($this->User->getLoginData($fb));
 				$this->redirect('/stylist/search/');
 			}
 		}
@@ -99,7 +97,6 @@ class RegisterController extends FrontBaseController {
 				$this->commit();
 				$this->Auth->login($this->User->getLoginData($fb));
 				$this->redirect('/user/search/');
-				//$this->redirect('/thanks_for_user.html');
 			} catch (Exception $e) {
 				$this->rollback($e);
 			}
@@ -151,11 +148,9 @@ class RegisterController extends FrontBaseController {
 		$user = $this->User->findByFacebookId($fb);
 		if (!empty($user) && !TEST_MODE) {
 			if ($user['User']['role_id'] == ROLE_CUTMODEL) {
-				//$this->redirect('/thanks_for_user.html');
 				$this->Auth->login($this->User->getLoginData($fb));
 				$this->redirect('/user/search/');
 			} else {
-				//$this->redirect('/thanks_for_stylist.html');
 				$this->Auth->login($this->User->getLoginData($fb));
 				$this->redirect('/user/stylist/');
 			}
@@ -207,13 +202,13 @@ class RegisterController extends FrontBaseController {
 				
 				// for admin
 				try {
-					$str_tmp = "【要対応：スタイリスト本人確認】　".$data['User']['email']." さんが、スタイリストで新規登録しました";
+					$str_tmp = '【要対応：スタイリスト本人確認】　'.$data['User']['email'].' さんが、スタイリストで新規登録しました';
 					$this->Email->sendmail([
-							'to' => 'cuttaloca+taio_stylist@gmail.com',
-							'subject' => $str_tmp,
-							'template' => 'for_admin_register_stylist',
-							'body' => ['data' => $data]
-							]);
+						'to' => 'cuttaloca+taio_stylist@gmail.com',
+						'subject' => $str_tmp,
+						'template' => 'for_admin_register_stylist',
+						'body' => ['data' => $data]
+					]);
 				} catch (Exception $e) {
 					$this->log($e, 'for_admin_mail_error');
 				}

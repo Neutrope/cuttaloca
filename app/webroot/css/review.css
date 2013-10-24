@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.stylistData .right {
+	width: 570px;
+}
+
+.stylistData textarea {
+	margin-top: 10px;
+	resize: none;
+	width: 520px;
+	height: 130px;
+}
+
+.schedule {
+	padding-right: 40px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.schedule a {
+	float: right;
+}
+
+#subHeader .wrapper .who a {
+	color: #008837;
+}
+
+#mainContents .photoList li .inner {
+	margin-bottom: 6px;
+	width: 180px;
+}
+
+#mainContents .photoList li .inner .photoBox {
+	float: left;
+}
+
+#mainContents .photoList li .inner .photoBox img {
+	display: block;
+}
+
+#mainContents .photoList li .inner .textBox {
+	padding-top: 8px;
+	width: 102px;
+	float: right;
+}
+
+#mainContents .photoList li .inner .textBox p {
+	color: #767372;
+	font-size: 11px;
+	word-wrap: break-word;
+}
+
+#mainContents .photoList li .inner .textBox .title {
+	margin-bottom: 9px;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}

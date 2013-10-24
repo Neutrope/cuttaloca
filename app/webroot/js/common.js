@@ -6,24 +6,23 @@ $(function(){
 
 	var agent = navigator.userAgent;
 	var spFlg = (agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPod/) != -1 || agent.search(/Android/) != -1);
-	
-	
+
 	// PAGE TOP
-	$('#footer .pagetop a').bind({
-		'mouseover':function(e){
-			$(this).stop(true, true).animate({
-				backgroundPositionY: '-50px'
-			}, 400, 'easeOutExpo' )
-		},
-		'mouseout':function(e){
-			$(this).stop(true, true).animate({ 
-				backgroundPositionY: '0'
-			}, 200, 'easeOutCubic' )
-		},
-		'click':function(e){
-			jQuery('html,body').animate({scrollTop: 0}, 500, 'easeOutExpo');
+	$('.pagetop').find('img').hover(function() {
+		$(this).stop().animate({
+			'margin-top': '-50px'
+		}, 500, 'easeOutExpo' );
+	}, function() {
+			$(this).stop().animate({ 
+				'margin-top': '0'
+			}, 300, 'easeOutCubic' )
+	}).click(function() {
+			$('html,body').animate({scrollTop: 0}, 500, 'easeOutExpo');
 			return false;
-		}
+	});
+
+	$('#send-review').click(function() {
+		$(this).closest('form').submit();
 	});
 
 
@@ -239,12 +238,10 @@ $(function(){
 	$borderBottomDiv=$('<div class="outerBorder" />');
 	$('body').append($borderTopDiv).append($borderLeftDiv).append($borderRightDiv).append($borderBottomDiv);
 	
-	var resizeBorder=function(){
-		
-		winHeight=$(window).height();
-		winWidth=$(window).width();
-		
-				
+	var resizeBorder = function(){
+		winHeight = $(window).height();
+		winWidth = $(window).width();
+
 		$borderTopDiv.css({
 			top:0,
 			left:0,

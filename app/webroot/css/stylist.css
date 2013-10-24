@@ -929,13 +929,31 @@
 	border-right: #e1e1e1 1px solid;
 	border-bottom: #e1e1e1 1px solid;
 	padding: 10px 10px 9px 10px;
+	max-height: 82px;
+	overflow: hidden;
+	position: relative;
 }
+
+#rightMenu .reviews .review .comment div .review-expansion {
+	position: absolute;
+	background-color: #fff;
+	bottom: 5px;
+	right: 0;
+	display: block;
+	width: 75px;
+}
+
 #rightMenu .reviews .review .comment div p{
 	font-size: 11px;
 	line-height: 160%;
 }
 
-#rightMenu .portfolio{margin-top: 40px;}
+#rightMenu .reviews{
+	margin-bottom: 40px;
+}
+#rightMenu .portfolio{
+	margin-top: 0px;
+}
 #rightMenu .portfolio ul{
 	overflow: hidden;
 	margin: 15px 0 3px 0;
@@ -1217,6 +1235,10 @@
 	height: 55px;
 }
 
+.offerfolio .approve {
+	margin-top: 25px;
+}
+
 .offerfolio .offerLink li a {
 	width: 105px;
 	height: 45px;
@@ -1233,11 +1255,11 @@
 	overflow: hidden;
 }
 
-.offerfolio .offerLink .of01 {
+.of01, .of11 {
 	float: left;
 }
 
-.offerfolio .offerLink .of02 {
+.of02, .of12 {
 	float: right;
 }
 
@@ -1301,6 +1323,80 @@
 }
 
 .offerfolio .offerLink .of02 a span:active{
+	border-top: 3px solid #494949;
+	border-left: 3px solid #494949;
+}
+
+.offerfolio .offerLink .of11 a span {
+	border: 2px solid #2F2F2F;
+	color: #2F2F2F;
+	text-indent: 0;
+	text-align: center;
+	font-weight: bold;
+	background: #FFF;
+	padding-top: 3px;
+	height: 35px;
+	/*shadow #2f2f2f*/
+	-moz-box-shadow: 3px 3px 0 #2F2F2F;
+	-webkit-box-shadow: 3px 3px 0 #2F2F2F;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#2F2F2F,Positive=1,OffX=3,OffY=3);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#2F2F2F,Positive=1,OffX=3,OffY=3);
+	box-shadow: 3px 3px 0 #2F2F2F;
+}
+
+.offerfolio .offerLink .of12 a span {
+	border: 2px solid #707070;
+	color: #707070;
+	text-indent: 0;
+	text-align: center;
+	font-weight: bold;
+	background: #FFF;
+	padding-top: 3px;
+	height: 35px;
+	/*shadow #2f2f2f*/
+	-moz-box-shadow: 3px 3px 0 #707070;
+	-webkit-box-shadow: 3px 3px 0 #707070;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=1,OffX=3,OffY=3);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=1,OffX=3,OffY=3);
+	box-shadow: 3px 3px 0 #707070;
+}
+
+.offerfolio .offerLink .of11 a span:hover {
+	background: #2F2F2F;
+	color: #fff;
+	margin: 3px 0 0 3px;
+	/*shadow*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#2F2F2F,Positive=0,OffX=0,OffY=0);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#2F2F2F,Positive=0,OffX=0,OffY=0);
+
+	box-shadow: none;
+}
+
+.offerfolio .offerLink .of12 a span:hover {
+	background: #707070;
+	color: #fff;
+	margin: 3px 0 0 3px;
+	/*shadow*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	/* for IE */
+	progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=0,OffX=0,OffY=0);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#707070,Positive=0,OffX=0,OffY=0);
+
+	box-shadow: none;
+}
+
+.offerfolio .offerLink .of11 a span:active{
+	border-top: 3px solid #005826;
+	border-left: 3px solid #005826;
+}
+
+.offerfolio .offerLink .of12 a span:active{
 	border-top: 3px solid #494949;
 	border-left: 3px solid #494949;
 }
