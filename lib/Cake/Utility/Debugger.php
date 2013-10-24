@@ -500,6 +500,8 @@ class Debugger {
 				return strtolower(gettype($var));
 			case 'null':
 				return 'null';
+			case 'unknown':
+				return 'unknown';
 			default:
 				return self::_object($var, $depth - 1, $indent + 1);
 		}
@@ -591,24 +593,20 @@ class Debugger {
 			if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
 				$ref = new ReflectionObject($var);
 
-				$reflectionProperties = $ref->getProperties(ReflectionProperty::IS_PROTECTED);
-				foreach ($reflectionProperties as $reflectionProperty) {
-					$reflectionProperty->setAccessible(true);
-					$property = $reflectionProperty->getValue($var);
+				$filters = array(
+					ReflectionProperty::IS_PROTECTED => 'protected',
+					ReflectionProperty::IS_PRIVATE => 'private',
+				);
+				foreach ($filters as $filter => $visibility) {
+					$reflectionProperties = $ref->getProperties($filter);
+					foreach ($reflectionProperties as $reflectionProperty) {
+						$reflectionProperty->setAccessible(true);
+						$property = $reflectionProperty->getValue($var);
 
-					$value = self::_export($property, $depth - 1, $indent);
-					$key = $reflectionProperty->name;
-					$props[] = "[protected] $key => " . $value;
-				}
-
-				$reflectionProperties = $ref->getProperties(ReflectionProperty::IS_PRIVATE);
-				foreach ($reflectionProperties as $reflectionProperty) {
-					$reflectionProperty->setAccessible(true);
-					$property = $reflectionProperty->getValue($var);
-
-					$value = self::_export($property, $depth - 1, $indent);
-					$key = $reflectionProperty->name;
-					$props[] = "[private] $key => " . $value;
+						$value = self::_export($property, $depth - 1, $indent);
+						$key = $reflectionProperty->name;
+						$props[] = sprintf('[%s] %s => %s', $visibility, $key, $value);
+					}
 				}
 			}
 
@@ -708,7 +706,7 @@ class Debugger {
 		$self = Debugger::getInstance();
 		$data = null;
 
-		if (is_null($format)) {
+		if ($format === null) {
 			return Debugger::outputAs();
 		}
 
@@ -817,7 +815,7 @@ class Debugger {
 		if (is_object($var)) {
 			return get_class($var);
 		}
-		if (is_null($var)) {
+		if ($var === null) {
 			return 'null';
 		}
 		if (is_string($var)) {

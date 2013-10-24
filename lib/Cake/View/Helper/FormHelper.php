@@ -218,11 +218,9 @@ class FormHelper extends AppHelper {
 
 		if ($key === 'validates' && !isset($this->fieldset[$model]['validates'])) {
 			$validates = array();
-			if (!empty($object->validate)) {
-				foreach ($object->validator() as $validateField => $validateProperties) {
-					if ($this->_isRequiredField($validateProperties)) {
-						$validates[$validateField] = true;
-					}
+			foreach ($object->validator() as $validateField => $validateProperties) {
+				if ($this->_isRequiredField($validateProperties)) {
+					$validates[$validateField] = true;
 				}
 			}
 			$this->fieldset[$model]['validates'] = $validates;
@@ -2866,7 +2864,7 @@ class FormHelper extends AppHelper {
  * @return array inputDefaults
  */
 	public function inputDefaults($defaults = null, $merge = false) {
-		if (!is_null($defaults)) {
+		if ($defaults !== null) {
 			if ($merge) {
 				$this->_inputDefaults = array_merge($this->_inputDefaults, (array)$defaults);
 			} else {
