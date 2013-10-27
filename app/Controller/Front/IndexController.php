@@ -64,6 +64,15 @@ class IndexController extends FrontBaseController {
 		}
 		$this->set('top', true);
 		$this->header['js'] = 'index';
+
+		// モバイル判定（iPad除く）
+		if( $this->request->is('mobile') && !preg_match('/iPad/i', $_SERVER['HTTP_USER_AGENT']) ){
+			// モバイルテーマ /View/Front/Themed/Mobile/ 以下を参照させる
+			$this->theme = 'Mobile';
+
+			// レイアウトもスマホ用
+			$this->layout = 'front_sp';
+		}
 	}
 
 	public function login() {
@@ -114,9 +123,9 @@ class IndexController extends FrontBaseController {
 		'js' => ['howto/stylist', 'howto/howto']
 		];
 		$this->set('howto', true);
-		$this->render($file);		
+		$this->render($file);
 	}
-	
+
 	private function pref() {
 		$json = file_get_contents('http://geoapi.heartrails.com/api/json?method=getPrefectures', true);
 		$pref = json_decode($json, true);
