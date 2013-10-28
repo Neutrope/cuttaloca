@@ -181,6 +181,9 @@ $(function(){
 		// show
 		$('.photoWrapper ul li img:eq(0)').show(0);
 		$('.loading').delay(500).fadeOut(300);
+
+        var h = $('.photoWrapper img').height();
+        $('.photoWrapper ul.sp').height(h);
 		
 		// timer start
 		plugin.timerID = setInterval(plugin.timerFunc, 3000);
@@ -258,8 +261,8 @@ $(function(){
 		
 		// if not pc
 		if(smartphoneFlg){
-			$('html').css({height:plugin.winHeight, overflow:'hidden'});
-			$('body').css({height:plugin.winHeight, overflow:'hidden'});
+//			$('html').css({height:plugin.winHeight, overflow:'hidden'});
+//			$('body').css({height:plugin.winHeight, overflow:'hidden'});
 		}
 		
 		

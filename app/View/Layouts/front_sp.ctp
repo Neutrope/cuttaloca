@@ -13,6 +13,7 @@
 	<link rel="start" href="/" title="ホーム">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" href="/css/mobile.css" media="screen">
+	<link rel="stylesheet" href="/css/app-style.min.css" media="all">
 </head>
 <body>
 
@@ -60,6 +61,7 @@
 <!-- Scripts [[[-->
 <!-- common scripts [-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="js/index.js"></script>
 <script src="js/iphone.js"></script>
 <noscript><p id="msgNoscript">当サイトは、ブラウザのJavaScript設定を有効にしてご覧ください。</p></noscript>
 <!--] common scripts -->

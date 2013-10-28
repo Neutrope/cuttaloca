@@ -7,3 +7,9 @@
 cuttaloca_*
 /app/Plugin/TwigView/tmp/
 /lib/Cake/Console/Templates/skel/tmp/
+
+# IntelliJ meta files
+.idea/
+
+# node modules
+node_modules/
