@@ -40,20 +40,18 @@
 		</ul>
 	</nav>-->
 	
-<nav class="footerNavi">
-<ul>
-	<li class="m3"><a href="/terms/company" class="fadeBtn">会社概要</a></li>
-	<li class="m2"><a href="/terms/use" class="fadeBtn">利用規約</a></li>
-	<li class="m9"><a href="/terms/media" class="fadeBtn">掲載情報</a></li>
-	</ul>
-</nav>
-<nav class="footerNavi">
-<ul>
-	<li class="m8"><a href="/terms/tokusho" class="fadeBtn">特定商取引</a></li>
-	<li class="m7"><a href="/terms/recruit" class="fadeBtn">採用情報</a></li>
-	<li class="m5"><a href="/terms/privacy" class="fadeBtn">Privacy</a></li>
-	</ul>
-</nav>
+    <nav class="footerNavi clearfix">
+        <ul class="left">
+            <li><a href="/terms/company" class="fadeBtn">会社概要</a></li>
+            <li><a href="/terms/media" class="fadeBtn">メディア掲載情報</a></li>
+            <li><a href="/terms/recruit" class="fadeBtn">採用情報</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="/terms/use" class="fadeBtn">利用規約</a></li>
+            <li><a href="/terms/tokusho" class="fadeBtn">特定商取引に関する表記</a></li>
+            <li><a href="/terms/privacy" class="fadeBtn">プライバシーポリシー</a></li>
+        </ul>
+    </nav>
 
 	<p class="copyright"><small>COPYRIGHT (C) 2013 CUTTALOCA<br> ALL RIGHTS RESERVED.</small></p>
 </footer>
