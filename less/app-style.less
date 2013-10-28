@@ -1,3 +1,10 @@
+@border_color: #ccc;
+@text_color: #888;
+
+body {
+  color: @text_color;
+}
+
 header {
   text-align: center;
 
@@ -44,12 +51,10 @@ header {
 
 #indexContents1 {
   text-align: center;
-  color: #555;
 
   .notes {
     margin-top: 10px;
     font-size: 10px;
-    color: #808080;
   }
 }
 
@@ -171,10 +176,10 @@ header {
 }
 
 .balloon {
-  background-color:#fff;
-  border:2px solid #808080;
-  border-radius:5px;
-  position:relative;
+  background-color: #fff;
+  border: 2px solid @border_color;
+  border-radius: 5px;
+  position: relative;
   display: table;
   font-size: 12px;
   height: 60px;
@@ -182,28 +187,28 @@ header {
 }
 
 .balloon:before {
-  border:10px solid transparent;
-  border-right-color:#fff;
-  border-left-width:0;
-  left:-7px;
-  content:"";
-  display:block;
-  top:21px;
-  position:absolute;
-  width:0;
-  z-index:1;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+  border-left-width: 0;
+  left: -7px;
+  content: "";
+  display: block;
+  top: 21px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
 }
 
 .balloon:after {
-  border:10px solid transparent;
-  border-right-color:#808080;
-  border-left-width:0;
-  left:-10px;
-  content:"";
-  display:block;
-  top:21px;
-  position:absolute;
-  width:0;
+  border: 10px solid transparent;
+  border-right-color: @border_color;
+  border-left-width: 0;
+  left: -10px;
+  content: "";
+  display: block;
+  top: 21px;
+  position: absolute;
+  width: 0;
 }
 
 .circle(@size) {
@@ -220,8 +225,8 @@ header {
 }
 
 .line {
-  border: 1px solid #808080;
-  width: 90%;
+  border: 2px solid @border_color;
+  width: 95%;
   margin: 20px auto;
 }
 
@@ -255,6 +260,7 @@ footer {
     a {
       text-decoration: none;
       font-size: 11px;
+      color: @text_color;
     }
   }
 }

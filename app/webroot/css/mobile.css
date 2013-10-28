@@ -59,7 +59,6 @@ body {
 	line-height: 1.5;
 }
 a {
-	color: #000;
 	-webkit-tap-highlight-color: rgba(00,33,99,0.3); /* タップ時の背景色 */
 }
 
@@ -178,8 +177,7 @@ body {
 	1. Header
 ------------------------------------------------------------ */
 body > header {
-	margin-bottom: 10px;
-	padding: 10px;
+	margin-bottom: 20px;
 	border: 1px solid #FFF;
 }
 body > header h1 {
