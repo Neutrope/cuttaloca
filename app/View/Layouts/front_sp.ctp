@@ -18,7 +18,12 @@
 <body>
 
 <header>
-<a href="/"><img src="../img/common/h_logo.png" alt="CUTTALOCA"></a>
+    <a href="/"><img src="../img/common/h_logo.png" alt="CUTTALOCA"></a>
+
+    <div class="line"></div>
+
+    <h4>- CUTTALOCAについて -</h4>
+
 	<hgroup>
 		<!--<h1><a href="/">##### SITE NAME #####</a></h1>
 		<h2><a href="/howto">CUTTALOCAについて</a></h2>-->
