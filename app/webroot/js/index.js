@@ -122,8 +122,16 @@ $(function(){
 			var $nowPhoto=$('.photoWrapper ul li img:eq('+nowIndex+')');
 			var $nextPhoto=$('.photoWrapper ul li img:eq('+val+')');
 			
-			$nowPhoto.stop(true, true).fadeOut(700);
-			$nextPhoto.stop(true, true).fadeIn(700);
+			$nowPhoto.stop(true, true).fadeOut(700, function() {
+                $(this).removeClass('current');
+            });
+			$nextPhoto.stop(true, true).fadeIn(700, function() {
+                $(this).addClass('current');
+
+                // Android対策
+                var h = $('.photoWrapper img.current').height();
+                $('.photoWrapper ul.sp').height(h);
+            });
 			
 			$photoNum.children('li:eq('+nowIndex+')').removeClass('hit');
 			$photoNum.children('li:eq('+val+')').addClass('hit');
@@ -179,12 +187,10 @@ $(function(){
 		plugin.windowResized();
 		
 		// show
-		$('.photoWrapper ul li img:eq(0)').show(0);
+		$('.photoWrapper ul li img:eq(0)').addClass('current').show(0);
 		$('.loading').delay(500).fadeOut(300);
 
-        var h = $('.photoWrapper img').height();
-        $('.photoWrapper ul.sp').height(h);
-		
+
 		// timer start
 		plugin.timerID = setInterval(plugin.timerFunc, 3000);
 		
