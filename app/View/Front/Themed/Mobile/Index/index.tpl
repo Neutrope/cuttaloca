@@ -1,4 +1,6 @@
 <!--	*** Main Content Area ***-->
+
+<h4 id="about-cuttaloca">- CUTTALOCAについて -</h4>
 <div class="photoWrapper">
 	<ul class="sp">
 		<li><img src="/img/top/main01.jpg" alt="main01"></li>
